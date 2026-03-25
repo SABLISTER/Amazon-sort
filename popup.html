@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon Delivery Sorter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Amazon Delivery Sorter</h1>
+      <p class="lede">Reorders loaded Amazon results by delivery text, adds inline 1-star reviews on search results, and can optionally show the same review panel on product pages.</p>
+
+      <label class="field">
+        <span>Default sort direction</span>
+        <select id="sortDirection">
+          <option value="asc">Soonest delivery first</option>
+          <option value="desc">Latest delivery first</option>
+        </select>
+      </label>
+
+      <label class="checkbox">
+        <input id="autoSort" type="checkbox" />
+        <span>Auto-sort when new results load</span>
+      </label>
+
+      <label class="checkbox">
+        <input id="showProductPageReviews" type="checkbox" />
+        <span>Show the 1-star review panel on Amazon product pages</span>
+      </label>
+
+      <div class="actions">
+        <button id="sortNow" type="button">Sort This Page</button>
+        <button id="restoreOrder" type="button" class="secondary">Restore Order</button>
+      </div>
+
+      <p id="status" class="status">Open an Amazon search results page to use the sorter.</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

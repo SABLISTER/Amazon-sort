@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Delivery Sorter",
+  "version": "0.1.0",
+  "description": "Sort Amazon search results by delivery estimate and open 1-star reviews inline from search results.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.amazon.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Amazon Delivery Sorter"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/*"
+      ],
+      "js": [
+        "delivery-parser.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
