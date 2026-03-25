@@ -1,6 +1,6 @@
 # Amazon Delivery Sorter
 
-Chrome extension prototype that reorders Amazon.com search result cards by the earliest delivery estimate visible on the page and lets you inspect 1-star reviews inline without leaving search results.
+Chrome extension prototype that reorders Amazon.com search result cards by the earliest delivery estimate visible on the page and lets you inspect 1-star reviews inline without leaving search results. The whole benefit of Amazon was the delivery speed, so I'm not wasting my time scrolling through their sponsored garbage while paying for Prime.
 
 ## What It Does
 
